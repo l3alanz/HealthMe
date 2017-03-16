@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_tracking"></ImageView>
+
+        <android.widget.TextClock
+            android:id="@+id/digitalClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:timeZone="UTC+0007"
+            android:format24Hour="dd MMM yyyy k:mm:ss"
+            android:format12Hour="@null"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <!-- tv stand for Textview -->
+        <TextView
+            android:id="@+id/tvStep"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="#610b1f"
+            android:gravity="center"
+            android:text="Step"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/tvWalk"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="100dp"
+            android:background="#81e2f1"
+            android:text="Walk"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/tvRun"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:background="#a70872"
+            android:text="Run"
+            android:textColor="#ffffff"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tvBike"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="#3e8064"
+            android:text="Bike"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/tvDrive"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:background="#f77846"
+            android:text="Drive"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:id="@+id/tvCalories"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#7adc7a"
+            android:text="Calories"
+            android:textColor="#ffffff"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
